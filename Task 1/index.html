@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        body {
+            margin: 50px 38% 50px 38%;
+        }
+        
+        form {
+            border: 2px solid black;
+            width: 400px;
+            border-radius: 7px;
+            color: black;
+            padding: 10px 15px;
+            background-color: #D1FFBD;
+        }
+
+        input {
+            font-size: 20px;
+            border: 2px solid black;
+            border-radius: 7px;
+            margin: 15px 0 10px 30px;
+            background-color: #f0e8e8;
+            padding: 3px;
+            padding-left: 10px;
+            width: max-content;
+        }
+        label {
+            padding-left: 15px;
+            padding-top: 20px;
+        }
+
+        h2 {
+            font-size: 25px;
+            font-weight: bold;
+            color: crimson;
+            margin-top: 70px;
+        }
+        h3 {
+            text-align: center;
+            font-size: 17px;
+            display: block;
+            margin: 10px;
+        }
+        button {
+            font-size: 20px;
+            font-weight: 500;
+            color: black;
+            border: 2px solid black;
+            border-radius: 7px;
+            margin: 15px;
+            cursor: pointer;
+        }
+
+        a {
+            color: blue;
+            font-weight: 400;
+            text-decoration: none;
+        }
+
+        p {
+            font-size: 19px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <form action="data.txt" >
+            <h2>Sign In</h2>
+            <p>Already have an account please Login.!</p> 
+            <hr>
+
+            <label for="email">Email:</label> <br>
+            <input type="email" name="email" id="email" required> <br>
+
+            <label for="password">Password:</label> <br>
+            <input type="password" name="password" id="password" required> <br>
+
+            <h3>Forgot <span style="color:royalblue">Password</span>?</h3>
+            <h3>Don't have an account ?<a href="./index1.html">Sign Up</a></h3>
+
+            <button type="submit">Sign In</button>
+        </form>
+    </div>
+</body>
+
+</html>

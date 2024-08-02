@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        body {
+            margin: 50px 38% 50px 38%;
+        }
+        
+        form {
+            border: 2px solid black;
+            width: 400px;
+            border-radius: 7px;
+            color: black;
+            padding: 10px 15px;
+            background-color: #D1FFBD;
+        }
+
+        input {
+            font-size: 20px;
+            border: 2px solid black;
+            border-radius: 7px;
+            margin: 10px 0 0 30px;
+            background-color: #f0e8e8;
+            padding: 3px;
+            padding-left: 20px;
+            width: max-content;
+        }
+        label {
+            padding-left: 15px;
+        }
+
+        h2 {
+            font-size: 25px;
+            font-weight: bold;
+            color: crimson;
+        }
+
+        button {
+            font-size: 20px;
+            font-weight: 500;
+            color: black;
+            border: 2px solid black;
+            border-radius: 7px;
+            margin: 15px;
+            cursor: pointer;
+        }
+
+        a {
+            color: blue;
+            font-weight: 400;
+            text-decoration: none;
+        }
+
+        p {
+            font-size: 19px;
+            font-weight: 600;
+        }
+
+        .checkbox-container {
+            width: fit-content;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <form>
+            <h2>Sign Up</h2>
+            <p>Please fill the form to create an Account.!</p> 
+            <hr>
+
+            <label for="firstname">First Name:</label> <br>
+            <input type="text" name="firstname" id="firstname" required> <br>
+
+            <label for="lastname">Last Name:</label> <br>
+            <input type="text" name="lastname" id="lastname" required> <br>
+
+            <label for="email">Email:</label> <br>
+            <input type="email" name="email" id="email" required> <br>
+
+            <label for="password">Password:</label> <br>
+            <input type="password" name="password" id="password" required> <br>
+
+            <label for="confirm_password">Confirm Password:</label> <br>
+            <input type="password" name="confirm_password" id="confirm_password" required> <br>
+
+            <input type="checkbox" id="terms" required>
+            <label for="terms">I Agree to the <a href="#">Terms</a> & <a href="#">Conditions</a></label> <br>
+
+            <button type="submit"><a href="./index.html">Sign Up</a></button>
+        </form>
+    </div>
+</body>
+
+</html>
